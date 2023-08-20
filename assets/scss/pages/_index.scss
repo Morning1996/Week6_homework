@@ -1,0 +1,86 @@
+.header {
+  .card-title {
+    font-size: 60px;
+    @include mobile {
+      font-size: 32px;
+    }
+  }
+}
+.type {
+  img {
+    width: 80px;
+    @include mobile {
+      width: 40px;
+    }
+  }
+  ul {
+    // 第 6 個
+    li:nth-child(6) {
+      h3 {
+        font-size: 48px;
+        @include mobile {
+          font-size: 24px;
+        }
+      }
+    }
+  }
+}
+.recent,
+.online {
+  h2 {
+    font-size: 64px;
+    @include mobile {
+      font-size: 24px;
+    }
+  }
+}
+// 共用
+.program {
+  .date {
+    font-size: 48px;
+  }
+  .sparkler {
+    width: 24px;
+  }
+  .card-img-top {
+    height: 255px;
+  }
+}
+
+// 共用
+.tag-item {
+  border-style: solid;
+  border-width: 1px; /* 設置所有邊框的寬度 */
+  border-left-width: 4px; /* 左邊邊框加粗 */
+  border-color: $primary; /* 邊框顏色，自定義顏色 */
+}
+.ptt {
+  img {
+    height: 317px;
+  }
+}
+.swiper-wrapper {
+  transition-timing-function: linear;
+}
+.swiper-slide {
+  letter-spacing: 3.2px;
+  width: auto;
+}
+.album {
+  img {
+    height: 274px;
+  }
+  .transform {
+    transform: translate(-50%, -50%) rotate(-4deg);
+  }
+  ul {
+    // 2 的倍數
+    li:nth-child(2n) {
+      transform: translate(0, 0) rotate(2deg);
+    }
+    // 第 3 個
+    li:nth-child(3) {
+      transform: translate(0, 0) rotate(-2deg);
+    }
+  }
+}
