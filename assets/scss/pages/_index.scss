@@ -34,26 +34,7 @@
     }
   }
 }
-// 共用
-.program {
-  .date {
-    font-size: 48px;
-  }
-  .sparkler {
-    width: 24px;
-  }
-  .card-img-top {
-    height: 255px;
-  }
-}
 
-// 共用
-.tag-item {
-  border-style: solid;
-  border-width: 1px; /* 設置所有邊框的寬度 */
-  border-left-width: 4px; /* 左邊邊框加粗 */
-  border-color: $primary; /* 邊框顏色，自定義顏色 */
-}
 .ptt {
   img {
     height: 317px;
