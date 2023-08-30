@@ -1,0 +1,13 @@
+// base 全站設定
+img {
+  object-fit: cover;
+  max-width: 100%;
+  height: auto;
+}
+a {
+  display: block;
+  text-decoration: none;
+  &:hover {
+    color: #9c9e18;
+  }
+}

@@ -1,19 +1,23 @@
 @import "../../node_modules/bootstrap/scss/functions";
-// import styles bundle
-@import "swiper/css/bundle";
 
-// 客製化更改變數，改這個檔案
+// 客製化更改變數，改這裡
 @import "./utils/variables";
+@import "./utils/utilities";
 
 // 將所有 BS5 的 SCSS 載入
 @import "../../node_modules/bootstrap";
+
+// 載入文字及 icon
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&family=Yeseva+One&display=swap");
 @import "./icofont/icofont.min.css";
 
-@import "./_common.scss";
-@import "./_setting.scss";
+// import styles bundle
+@import "swiper/css/bundle";
+
+// 全站及通用設定
+@import "./_base.scss";
+@import "./_helper.scss";
+@import "./_components.scss";
 
 @import "./layout/header.scss";
-@import "./layout/footer.scss";
 @import "./pages/index.scss";
-@import "./pages/program.scss";

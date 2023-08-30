@@ -1,16 +1,8 @@
 .navbar {
   img {
     width: 53px;
-    height: 53px;
     @include pad {
       width: 40px;
-      height: 40px;
-    }
-  }
-  .link {
-    color: $primary;
-    &:hover {
-      color: #9c9e18;
     }
   }
 }

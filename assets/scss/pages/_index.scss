@@ -1,11 +1,3 @@
-.header {
-  .card-title {
-    font-size: 60px;
-    @include mobile {
-      font-size: 32px;
-    }
-  }
-}
 .type {
   img {
     width: 80px;
@@ -13,33 +5,18 @@
       width: 40px;
     }
   }
-  ul {
-    // 第 6 個
-    li:nth-child(6) {
-      h3 {
-        font-size: 48px;
-        @include mobile {
-          font-size: 24px;
-        }
-      }
-    }
-  }
 }
-.recent,
-.online {
-  h2 {
-    font-size: 64px;
-    @include mobile {
-      font-size: 24px;
-    }
-  }
-}
-
 .ptt {
   img {
     height: 317px;
   }
 }
+.album {
+  img {
+    height: 274px;
+  }
+}
+// 跑馬燈
 .swiper-wrapper {
   transition-timing-function: linear;
 }
@@ -47,21 +24,13 @@
   letter-spacing: 3.2px;
   width: auto;
 }
-.album {
-  img {
-    height: 274px;
-  }
-  .transform {
-    transform: translate(-50%, -50%) rotate(-4deg);
-  }
-  ul {
-    // 2 的倍數
-    li:nth-child(2n) {
-      transform: translate(0, 0) rotate(2deg);
-    }
-    // 第 3 個
-    li:nth-child(3) {
-      transform: translate(0, 0) rotate(-2deg);
-    }
-  }
+// 旋轉角度
+.-degree-4 {
+  transform: translate(-50%, -50%) rotate(-4deg);
+}
+.degree-2 {
+  transform: translate(0, 0) rotate(2deg);
+}
+.-degree-2 {
+  transform: translate(0, 0) rotate(-2deg);
 }

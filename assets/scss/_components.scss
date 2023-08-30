@@ -1,23 +1,21 @@
 // 共用
-.program {
-  .date {
-    font-size: 48px;
-  }
-  .sparkler {
-    width: 24px;
-  }
-  .card-img-top {
-    height: 255px;
-  }
-  h5:hover {
-    .circle {
-      width: 30px;
-      height: 30px;
-      z-index: -1;
-    }
+.sparkler {
+  width: 24px;
+}
+.card-img-top {
+  height: 255px;
+}
+
+.click:hover {
+  color: $primary;
+  .circle {
+    width: 30px;
+    height: 30px;
+    z-index: -1;
   }
 }
-.tag-item {
+
+.tag-click {
   border-style: solid;
   border-width: 1px; /* 設置所有邊框的寬度 */
   border-left-width: 4px; /* 左邊邊框加粗 */
